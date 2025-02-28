@@ -352,6 +352,7 @@ of code below the Schedule `<h2>` header below with
 <h2 id="schedule">Schedule</h2>
 
 {% include schedule.html %}
+{% endif %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
