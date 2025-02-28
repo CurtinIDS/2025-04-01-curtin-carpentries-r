@@ -4,7 +4,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "Curtin University"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Building 105 (TL Robertson Library), Room 542, Curtin University, Bentley "      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Building 105 (TL Robertson Library), Room 542, Curtin University, Bentley"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "-32.0054"        # decimal latitude of workshop venue (use https://www.latlong.net/)
@@ -87,9 +87,14 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
-{% if site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% endif %}
+<p id="who"> 
+  <strong>Who:</strong> <br>
+  The course is aimed at postgraduate students and other researchers.
+  <strong>
+    You don't need to have any previous knowledge of the tools
+    that will be presented at the workshop, but you will need basic computer literacy, including managing files on your laptop.
+  </strong>
+</p>
 
 {% comment %}
 LOCATION
@@ -109,15 +114,6 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 
-<p id="who"> 
-  <strong>Who:</strong> <br>
-  The course is aimed at postgraduate students and other researchers.
-  <strong>
-    You don't need to have any previous knowledge of the tools
-    that will be presented at the workshop, but you will need basic computer literacy, including managing files on your laptop.
-  </strong>
-</p>
-
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
@@ -132,6 +128,7 @@ address.
     <a href="https://what3words.com/{{page.what3words}}">///{{page.what3words}}</a>.
   {%endif %}
 </p>
+{% endif %}
 
 {% comment %}
 DATE
@@ -248,7 +245,7 @@ Edit the text to match who can attend the workshop. For instance:
 
 <p id="before-attending">
 <strong>What do I need to do before attending?</strong> <br>
-  Before attending please ensure you've followed the <a href="#setup">setup</a> . This means you should have:  
+  Before attending please ensure you've followed the <a href="#setup">setup</a>. This means you should have:  
   <ol>
     <li> Installed R </li>
     <li> Installed R Studio </li>
@@ -352,7 +349,6 @@ of code below the Schedule `<h2>` header below with
 <h2 id="schedule">Schedule</h2>
 
 {% include schedule.html %}
-{% endif %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
