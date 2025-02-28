@@ -11,7 +11,7 @@ latitude: "-32.0054"        # decimal latitude of workshop venue (use https://ww
 longitude: "115.894424"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 mazemaps_url: "https://campusmap.curtin.edu.au/bentley/?poi=793949"        # Mazemaps URL (use https://properties.curtin.edu.au/visit-curtin/campus-maps/ click your building, then click the share button, e.g. https://link.mazemap.com/kBQQTJKo)
 humandate: "Apr 1st-2nd, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "8:45 am - 4:00pm AWST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+humantime: "8:45am - 4:00pm AWST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-04-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2025-04-02        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Kathryn Napier", "Rebecca Hancock"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
